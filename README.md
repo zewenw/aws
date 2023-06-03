@@ -1,2 +1,3 @@
 # aws
-Learning marterial for aws
+Learning marterial for aws certifications
+
