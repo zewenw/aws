@@ -6,7 +6,7 @@
   - if your application is not accessible(time out), then it's a security group issue
   - if your application gives a "connection refused" error, then it's an application error or it's not launched.
 - **AWS Storage Gateway** bridge between on-premises data and cloud data
-- **AWS DataSync** moves large amount of data to and from
+- **AWS DataSync** moves large amount of data between on-premises and S3, EFS, FSx for Windows
   - On-premises/ other cloud to AWS(NFS, SMB, HDFS, S3 API) - needs agent
   - AWS to AWS(different storage services) - no agent needed
 - **AWS Transfer Family** is a fully-managed service for file transfers into and out of Amazon s3 or Amazon EFS using the FTP protocol. can be used to share content with authenticated customers 
@@ -23,7 +23,6 @@
 - **Cross Account Policy** 
   - Caller is a AWS Service should have a IAM Role policy allow it to access specific action on specific resource, usually should be the Called party.
   - Called party should be attached with resource policy and allow caller execute specific action on it.
-
 - **AWS Transcribe** is an AWS service that makes it easy for customers to convert speech-to-text. 
 - **AWS Polly** is a service that turns text into lifelike speech
 - **AWS Connect**  is a self-service, cloud-based contact centre service that make it easy for any business to deliver better customer service at lower cost
@@ -41,4 +40,7 @@
 - **CIDR** shouldn't overlap, and the max CIDR size in AWS is /16, 5 IP are reserved by AWS
 - **VPC Peering** route tables must be updated in both VPCs that are peered.
 - **Amazon S3 & DynamoDB** are the two services have a VPC Gateway Endpoint, all the other have an interface endpoint(Powered by Private Link,  means a private IP)
+- **AWS VPN Cloud-Hub** allows you to securely communicate with multiple sites using AWS VPN, it operates on a simple hub-and-spoke model that you can use with or without a VPC.
+- **Dual-Stack** refers to the capability of a network or a system to support both IPv4 and IPv6.
+- **AWS Backup** centrally manage and automate backups across AWS services.
 
