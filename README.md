@@ -1,3 +1,3 @@
 # aws
-Learning marterial for aws certifications
+Learning materials for AWS and AWS certifications
 
